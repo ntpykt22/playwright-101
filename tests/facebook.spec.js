@@ -31,7 +31,7 @@ test('ผู้ใช้เข้าสู่ระบบ Facebook แล้ว�
   });
 
   await test.step('Step 2: โพสต์ข้อความ ว่า "Hello Playwright"', async () => {
-    await page.goto('https://www.facebook.com');
+    //await page.goto('https://www.facebook.com');
     
     //ตรวจสอบ Input Fields ว่าสามารถใช้งานได้
     await expect(page.getByLabel('สร้างโพสต์')).toContainText('คุณคิดอะไรอยู่ ชื่อผู้ใช้งาน');   
@@ -46,7 +46,7 @@ test('ผู้ใช้เข้าสู่ระบบ Facebook แล้ว�
     await page.getByLabel('โพสต์', { exact: true }).click();
 
     //ตรวจสอบ ข้อความ
-    await page.goto('https://www.facebook.com');
+    //await page.goto('https://www.facebook.com');
     await expect(page.getByText('Hello Playwright')).toBeVisible();
   });
 });
