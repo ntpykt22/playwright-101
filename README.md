@@ -23,3 +23,14 @@ await page.getByRole('button', { name: 'คุณคิดอะไรอยู�
 await page.getByLabel('คุณคิดอะไรอยู่ ชื่อผู้ใช้งาน').fill('Hello Playwright');
 ```
 
+# คำสั่งการใช้งาน การทดสอบ playwright
+
+```
+npm run ui facebook.spec.js
+```
+หรือ
+```
+npx playwright test facebook.spec.js --ui
+```
+
+
